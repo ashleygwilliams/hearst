@@ -1,285 +1,100 @@
-$purple: #47006B;
-$yellow: #FFFF4C;
-$blue: #00CCCB;
-$pink:  #FF0079;
-$salmon: #FF5B51;
-$royal: #4700BF;
-$small_space: 5px;
-$large_space: 10px;
-$heavy_weight: 600;
-$light_weight: 300;
+$grey: #363333;
+$darkteal: #007C7C;
+$teal: #00C8C8;
+$yellow: #FFD300;
+$large_space: 20px;
+$small_space: 10px;
+$tiny_space: 5px;
 
-@font-face {
-  font-family: "Blanch";
-  src: url(/fonts/BLANCH_CONDENSED_LIGHT.otf);
+@font-face{
+  font-family: 'Ostrich Light';
+  src: url(/fonts/OstrichLight.ttf);
 }
 
-div#landing{
-  html, body {
-    height: 100%;
-  }
-  div#banner{
-    padding: $large_space;
-    margin-top: $large_space;
-  }
+@font-face{
+  font-family: 'Ostrich Title';
+  src: url(/fonts/OstrichBlack.ttf);
 }
 
-.content {
-  margin-top: $large_space;
+.container-fluid {
+  padding: 40px;
 }
 
-h1{
-  font-family: "Blanch";
-  font-size: 100px;
-  text-align: center;
-  line-height: 1.1em;
-}
-
-div.trending {
-  margin-bottom: $small_space;
+div.kudos {
   padding: $large_space;
-  background-color: $yellow;
-  border: dotted white;
-  h3 {
-    color: $salmon;
-    font-family: "Blanch";
-    font-size: 50px;
-    line-height: 0.7em;
-  }
-  li {
-    list-style: none;
-    padding: $small_space;
-    div.trend{
-      font-weight: $heavy_weight;
-    }
-  }
-  div.bar {
-    float: left;
-    height: 20px;
-    background-color: $salmon;
-    margin-right: $small_space;
-  }
-}
-
-div.leaderboard {
-  margin-bottom: $small_space;
-  padding: $small_space;
-  background-color: $blue;
-  h3{
-    color: $yellow;
-    font-family: "Blanch";
-    font-size: 50px;
-    line-height: 0.7em;
-  }
-  div.user_card {
-    padding: $large_space;
-  }
-  div.pic_score {
-    margin-top: -13px;
-    margin-top: -10px;
-    img.profile_pic {
-      width: 100%;
-      vertical-align: text-top;
-    }
-    div.score {
-      background-color: black;
-      font-size: 15px;
-      color: white;
-      font-weight: $heavy_weight;
-      text-align: center;
-      padding: $large_space;
-    }
-  }
-  div.name_info {
-    margin-top: -$large_space;
-    margin-right: $small_space; 
-    padding-top: $large_space;
-    padding-right: $large_space;
-    background-color: white;
-    font-size: 20px;
-    line-height: 1em;
-    a{
-      color: black;
-      &:hover {
-        text-decoration: none;
-        color: grey;
-      }
-    }
-    span {
-      &.user_rank {
-        margin-top: 2px;
-        background-color: $yellow;
-        color: $salmon;
-        padding: $large_space;
-      }
-      &.user_name {
-        font-weight: $heavy_weight;
-      }
-    }
-    div{
-      &.user_post {
-        margin-top: $large_space;
-        padding: $large_space;
-        font-size: 15px;
-        overflow: hidden;
-      }
-      &.post_details {
-        background-color: $blue;
-        div{
-          padding: $small_space;
-          &.post_score {
-            background-color: $salmon;
-            margin-right: -20px;
-            color: white;
-            font-weight: $heavy_weight;
-            font-size: 12px;
-            text-align: center;
-            padding-right: 20px;
-          }
-          &.post_time {
-            text-align: right;
-            font-size: 12px;
-            color: white;
-            overflow: hidden;
-            font-style: italic;
-          }
-        }
-      }
-    }
-  }
-}
-
-div.editorial {
-  margin-bottom: $small_space;
-  padding: $small_space;
-  background-color: $salmon;
-  ol {
-    list-style:none;
-    margin: 0 10px;
-  }
-  h3 {
-    color: $yellow;
-    font-family: "Blanch", sans-serif;
-    font-size: 50px;
-    line-height: 0.7em;
-  }
-  li {
-    border-bottom: dotted $yellow 2px;
-    padding: $small_space;
-    margin: 10px 0px;
-    a {
-      font-weight: $heavy_weight;
-      color: white;
-    }
-    span{
-      color: black;
-      &.title {
-        font-weight: $heavy_weight;
-      }
-      &.editor {
-        color: white;
-      }
-    }
+  margin: $large_space 0px;
+  h1 {
+    color: white;
+    font-family: 'Playfair Display';
   }
 }
 
 footer {
-  padding: $small_space;
-  margin: $small_space;
-  background-color: $blue;
-  color: white;
-  font-weight: $heavy_weight;
-  width: 100%;
-  text-align: right;
-  margin-top: $large_space;
-  border-top-color: white;
+  background-color: black; 
   border-top-style: dotted;
-}
-
-div.singly {
-  text-align: center;
-  border-style: dotted;
-  background-color: $blue;
-  border-color: white;
-  margin: 20px 0px 40px 0px;
-  h2{
-    font-family: "Blanch";
-    font-size: 60px;
-    color: $yellow;
-    line-height: 1.1em;
-  }
-  a.bttn {
-    width: 200px;
-    display: inline-block;
-    padding: $large_space;
-    font-weight: $heavy_weight;
-    -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-        border-radius: 6px;
-    background-color: $royal;
-    color: white;
-    &:hover{
-      text-decoration: none;
-      background-color: $salmon;
+  height: 60px;
+  color: white;
+  span {
+    font-family: 'Ostrich Light', sans-serif;
+    font-size: 30px;
+    font-style: none;
+    &.date {
+      font-style: italic;
+      color: $yellow;
     }
-  }
-  div.bttns {
-    width: 420px;
-    margin: auto;
-    text-align: center;
-    margin-bottom: -20px;
-  }
-}
-
-
-
-div#about {
-  margin: $large_space 0px;
-  border-style: dotted;
-  border-color: $yellow;
-  padding: $large_space;
-  span.highlight{
-    color: $salmon;
-    font-weight: $heavy_weight;
   }
 }
 
 header {
-  height: 50px;
-  img {
-    width: 40px;
-  }
-  a:hover{
-    text-decoration: none;
-  }
-  a.brnd {
+  border-bottom: dotted white;
+  h3 {
+    font-family: 'Ostrich Title', sans-serif;
+    font-size: 60px;
     color: $yellow;
-    display: block;
-    float: left;
-    padding: 10px 20px 10px;
-    margin-left: -10px;
-    font-size: 20px;
-    &:hover{
-      color: $salmon;
-    }
-  }
-  .auth{
-    background-color: $royal;
-    padding: $large_space;
-    color: white;
-    &:hover{
-      text-decoration: none;
-    }
+    line-height: 1em;
   }
 }
 
-#wrap {
+div.pic {
+  position: fixed;
+  bottom: 55px;
+  z-index: -1;
+}
+
+header, footer {
+  left: 0;
+  right: 0;
+  padding: $large_space;
+}
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+  html,
+  body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+  }
+
+  /* Wrapper for page content to push down footer */
+  #wrap {
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    /* Negative indent footer by it's height */
     margin: 0 auto -60px;
-}
-#push,
-#footer {
+  }
+
+  /* Set the fixed height of the footer here */
+  #push {
     height: 60px;
-}
+  }
+
+  /* Lastly, apply responsive CSS fixes as necessary */
+  @media (max-width: 767px) {
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
